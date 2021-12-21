@@ -7,7 +7,7 @@ const SideBar = ({ right, children }) => {
     if (right) {
       setLocation("right-10");
     }
-  }, []);
+  }, [right]);
 
   return (
     <div
