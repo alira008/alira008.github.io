@@ -1,0 +1,73 @@
+import React, { useState, useEffect } from "react";
+
+const Card = ({ title, description, link, image, stacks, right }) => {
+  const first = "col-start-1 md:col-start-1 lg:col-start-1";
+  const second = "col-end-2 md:col-end-12 lg:col-end-12";
+  const textLeft = "md:text-left";
+  const textRight = "md:text-right";
+  const justStart = "md:justify-start";
+  const justEnd = "md:justify-end";
+  const [contentAlign, setContentAlign] = useState(second);
+  const [imageAlign, setImageAlign] = useState(first);
+  const [textAlign, setTextAlign] = useState(textRight);
+  const [justify, setJustify] = useState(justEnd);
+
+  useEffect(() => {
+    if (right) {
+      setContentAlign(first);
+      setImageAlign(second);
+      setTextAlign(textLeft);
+      setJustify(justStart);
+    }
+  }, [right]);
+
+  return (
+    <>
+      <div
+        className={`font-serif col-span-1 md:col-span-6 lg:col-span-5 row-span-full flex flex-col justify-center p-6 md:p-0 bg-navy-200/60 md:bg-transparent z-20 md:z-auto ${contentAlign} ${textAlign}`}
+      >
+        <h3 className="font-sans mb-4 text-xl text-slate-300 md:z-20">
+          {title}
+        </h3>
+        <div className="md:p-6 mb-6 md:bg-navy-200 md:relative md:rounded md:shadow md:shadow-navy-400 md:z-20">
+          <p>{description}</p>
+        </div>
+        <ul
+          className={`flex flex-wrap gap-x-4 mb-4 relative md:text-sm md:z-20 ${justify}`}
+        >
+          {stacks.map((stack) => (
+            <li>{stack}</li>
+          ))}
+        </ul>
+        <div>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex ${justify}`}
+          >
+            <i className="fab fa-github fa-lg hover:text-green-300"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        className={`col-span-1 h-full md:col-span-6 lg:col-span-7 row-span-full ${imageAlign}`}
+      >
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-full relative inline-block shadow-2xl shadow-navy-400 before:bg-teal-800 before:rounded before:opacity-70 before:absolute before:w-full before:h-full hover:before:opacity-0 before:transition-opacity"
+        >
+          <img
+            src={image}
+            alt=""
+            className="rounded w-full h-full object-cover"
+          />
+        </a>
+      </div>
+    </>
+  );
+};
+
+export default Card;
