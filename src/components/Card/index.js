@@ -26,10 +26,10 @@ const Card = ({ title, description, link, image, stacks, right }) => {
       <div
         className={`font-serif col-span-1 md:col-span-6 lg:col-span-5 row-span-full flex flex-col justify-center p-6 md:p-0 bg-navy-200/60 md:bg-transparent z-20 md:z-auto ${contentAlign} ${textAlign}`}
       >
-        <h3 className="font-sans mb-4 text-xl text-slate-300 md:z-20">
+        <h3 className="mb-4 font-sans text-xl md:z-20 text-slate-300">
           {title}
         </h3>
-        <div className="md:p-6 mb-6 md:bg-navy-200 md:relative md:rounded md:shadow md:shadow-navy-400 md:z-20">
+        <div className="mb-6 md:relative md:z-20 md:p-6 md:rounded md:shadow md:bg-navy-200 md:shadow-navy-400">
           <p>{description}</p>
         </div>
         <ul
@@ -46,7 +46,7 @@ const Card = ({ title, description, link, image, stacks, right }) => {
             rel="noopener noreferrer"
             className={`flex ${justify}`}
           >
-            <i className="fab fa-github fa-lg hover:text-green-300"></i>
+            <i className="hover:text-green-300 fab fa-github fa-lg"></i>
           </a>
         </div>
       </div>
@@ -57,12 +57,12 @@ const Card = ({ title, description, link, image, stacks, right }) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="h-full relative inline-block shadow-2xl shadow-navy-400 before:bg-teal-800 before:rounded before:opacity-70 before:absolute before:w-full before:h-full hover:before:opacity-0 before:transition-opacity"
+          className="inline-block relative h-full shadow-2xl shadow-navy-400 before:bg-teal-800 before:rounded before:opacity-70 before:absolute before:w-full before:h-full before:transition-opacity hover:before:opacity-0"
         >
           <img
             src={image}
             alt=""
-            className="rounded w-full h-full object-cover"
+            className="object-cover w-full h-full rounded"
           />
         </a>
       </div>
