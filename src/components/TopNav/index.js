@@ -35,9 +35,6 @@ const NavBar = () => {
           <NavBarLinkButton name={"Skills"} itemNumber={"02"} />
         </li>
         <li>
-          <NavBarLinkButton name={"Jobs"} itemNumber={"03"} />
-        </li>
-        <li>
           <NavBarLinkButton name={"Projects"} itemNumber={"04"} />
         </li>
         <li>
@@ -80,13 +77,6 @@ const NavBar = () => {
               <NavBarLinkButton
                 name={"Skills"}
                 itemNumber={"02"}
-                isMobileButton
-              />
-            </li>
-            <li className="w-full">
-              <NavBarLinkButton
-                name={"Jobs"}
-                itemNumber={"03"}
                 isMobileButton
               />
             </li>
