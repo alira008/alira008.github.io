@@ -217,10 +217,43 @@ function App() {
           </div>
         </section>
         <section
+          id="Jobs"
+          className="flex flex-col py-14 mx-auto max-w-xl lg:py-28 lg:max-w-4xl"
+        >
+          <h2 className="flex items-center mt-2 mb-10 font-sans text-2xl font-bold lg:text-4xl text-slate-200 before:content-['03.'] before:font-mono before:font-light before:text-green-300 before:text-xl before:mr-2 after:ml-2 md:after:ml-3 lg:after:ml-5 after:w-8 md:after:w-64 lg:after:w-1/2 after:h-px after:bg-navy-100">
+            Jobs
+          </h2>
+          <p className="mb-6 text-lg text-slate-300">HBH Unlimited</p>
+          <p className="mb-4 text-slate-300">2021 - Current</p>
+          <p className="mb-4">
+            Connected third party APIs like TD Ameritrade and E*Trade to send
+            trades and receive real time data. I used C#, Rust, and
+            multi-threaded principles to make sure we were receiving and
+            processing data within milliseconds.
+          </p>
+          <p className="mb-4">
+            Setup Microsoft SQL Server for processing and storing thousands of
+            datapoints while making sure insertions and retrievals were done
+            with very small latency. I had to keep in mind when to use
+            non-clustered and clustered indexes when shaping tables.
+          </p>
+          <p className="mb-4">
+            Built a company web application for managing trades we were making
+            using .NET 6 for creating an API for the React front-end to connect
+            to.
+          </p>
+          <p>
+            Cleaned and processed thousands of data in order to make statistical
+            analysis on stocks using SQL, Python, and Rust. Using this processed
+            data, I generated excel sheets so that the stakeholder could clearly
+            see how stocks were changing throughout the day.
+          </p>
+        </section>
+        <section
           id="Projects"
           className="flex flex-col py-14 mx-auto max-w-xl lg:py-28 lg:max-w-4xl"
         >
-          <h2 className="flex items-center mt-2 mb-10 font-sans text-2xl font-bold lg:text-4xl text-slate-200 before:content-['03.'] before:font-mono before:font-light before:text-green-300 before:text-xl before:mr-2 after:ml-2 md:after:ml-3 lg:after:ml-5 after:w-8 md:after:w-64 lg:after:w-72 after:h-px after:bg-navy-100">
+          <h2 className="flex items-center mt-2 mb-10 font-sans text-2xl font-bold lg:text-4xl text-slate-200 before:content-['04.'] before:font-mono before:font-light before:text-green-300 before:text-xl before:mr-2 after:ml-2 md:after:ml-3 lg:after:ml-5 after:w-8 md:after:w-64 lg:after:w-72 after:h-px after:bg-navy-100">
             Projects I Have Made
           </h2>
           <ul>
@@ -239,7 +272,7 @@ function App() {
           id="Contact"
           className="flex flex-col items-center py-14 mx-auto max-w-4xl lg:py-28"
         >
-          <h2 className="flex items-center self-start mt-2 mb-10 font-sans text-4xl md:self-auto text-slate-200 before:content-['04.'] before:font-mono before:font-light before:bottom-1 before:text-green-300 before:text-xl before:mr-2">
+          <h2 className="flex items-center self-start mt-2 mb-10 font-sans text-4xl md:self-auto text-slate-200 before:content-['05.'] before:font-mono before:font-light before:bottom-1 before:text-green-300 before:text-xl before:mr-2">
             Get In Touch
           </h2>
           <p className="mb-12">
