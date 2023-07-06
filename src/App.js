@@ -15,7 +15,7 @@ const WeatherAppContent = {
   title: "Weather Web App",
   description:
     "Shows weather for any city the user searches for. I used Nodejs and JSON server to test API calls on my computer before using a production.",
-  stacks: ["Angular", "Typescript", "ATMega1284"],
+  stacks: ["Angular", "Typescript"],
   link: "https://github.com/alira008/WeatherWebApp",
   image: "assets/WeatherApp.png",
 };
@@ -155,7 +155,7 @@ function App() {
           <div className="col-span-3">
             <div className="grid gap-6 mt-4 lg:grid-cols-3 grid-col-2">
               <div>
-                <h2 className="mb-1 font-sans text-lg text-slate-300">
+                <h2 className="mb-1 font-sans text-xl text-slate-300">
                   Web Development
                 </h2>
                 <ul className="grid grid-cols-2 gap-y-1 gap-x-4">
@@ -171,7 +171,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-1 font-sans text-lg text-slate-300">
+                <h2 className="mb-1 font-sans text-xl text-slate-300">
                   Server Side Development
                 </h2>
                 <ul className="grid grid-cols-1 gap-y-1 gap-x-4">
@@ -182,8 +182,8 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-1 font-sans text-lg text-slate-300">
-                  Software
+                <h2 className="mb-1 font-sans text-xl text-slate-300">
+                  Programming Languages
                 </h2>
                 <ul className="grid grid-cols-1 gap-y-1 gap-x-4">
                   <li>C++</li>
@@ -194,7 +194,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-1 font-sans text-lg text-slate-300">Tools</h2>
+                <h2 className="mb-1 font-sans text-xl text-slate-300">Tools</h2>
                 <ul className="grid grid-cols-1 gap-y-1 gap-x-4">
                   <li>Git</li>
                   <li>Bash</li>
@@ -203,7 +203,7 @@ function App() {
                 </ul>
               </div>
               <div className="col-span-2">
-                <h2 className="mb-1 font-sans text-lg text-slate-300">
+                <h2 className="mb-1 font-sans text-xl text-slate-300">
                   Related Skills
                 </h2>
                 <ul className="grid grid-cols-1 gap-y-1">
@@ -233,7 +233,7 @@ function App() {
           </p>
           <p className="mb-4">
             Setup Microsoft SQL Server for processing and storing thousands of
-            datapoints while making sure insertions and retrievals were done
+            data points while making sure insertions and retrievals were done
             with very small latency. I had to keep in mind when to use
             non-clustered and clustered indexes when shaping tables.
           </p>
