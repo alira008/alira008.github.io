@@ -33,10 +33,10 @@ const Card = ({ title, description, link, image, stacks, right }) => {
           <p>{description}</p>
         </div>
         <ul
-          className={`flex flex-wrap gap-x-4 mb-4 relative md:text-sm md:z-20 ${justify}`}
+          className={`flex flex-wrap gap-x-4 gap-y-2 mb-4 relative md:text-sm md:z-20 ${justify}`}
         >
           {stacks.map((stack) => (
-            <li>{stack}</li>
+            <li className="py-1 px-3 rounded-full bg-navy-200">{stack}</li>
           ))}
         </ul>
         <div>
@@ -46,7 +46,7 @@ const Card = ({ title, description, link, image, stacks, right }) => {
             rel="noopener noreferrer"
             className={`flex ${justify}`}
           >
-            <i className="hover:text-green-300 fab fa-github fa-lg"></i>
+            <i className="py-2 px-3 rounded-full hover:text-green-300 bg-navy-200 fab fa-github fa-lg"></i>
           </a>
         </div>
       </div>
