@@ -1,15 +1,12 @@
 <script lang="ts">
 	import NavbarLinkButton from '$lib/NavbarLinkButton.svelte';
+	import resumeSrc from '$lib/assets/resume/Resume.pdf';
 
 	let buttonClicked = $state(false);
 	let mobileLeft = $state('translate-x-full');
 	function handleClick() {
-		if (buttonClicked) {
-			mobileLeft = 'translate-x-0';
-		} else {
-			mobileLeft = 'translate-x-full';
-		}
-        buttonClicked = !buttonClicked
+		buttonClicked = !buttonClicked;
+		mobileLeft = buttonClicked ? 'translate-x-0' : 'translate-x-full';
 	}
 </script>
 
@@ -37,7 +34,7 @@
 		</li>
 		<li>
 			<a
-				href="/assets/resume/Resume.pdf"
+				href={resumeSrc}
 				target="_blank"
 				rel="noopener noreferrer"
 				class="flex items-center p-3 text-green-300"
@@ -76,7 +73,7 @@
 				</li>
 				<li class="w-full">
 					<a
-						href="/assets/resume/Resume.pdf"
+						href={resumeSrc}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-block w-full p-3 text-center text-green-300"
